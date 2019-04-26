@@ -1,0 +1,77 @@
+week2 exercise 1
+
+1. Newton Second Law
+Pseudocode perhitungan
+READ and SAVE "massa benda" in units of kg
+READ and SAVE "percepatan" in units of m/s2
+COMPUTE "massa benda" times "percepatan"
+SAVE previous computation result
+DISPLAY the computation result in units of N
+
+2. Tahun Kabisat
+Algorithm perhitungan
+Catat "tahun" sebagai tahun yang akan ditentukan tahun kabisat atau bukan tahun kabisat.
+kriteria 1 - Bagi "tahun" dengan angka 4
+             jika sisa pembagian "tahun" sama dengan 0, lalu bagi "tahun" dengan angka 100.
+             apabila sisa pembagian "tahun" tidak sama dengan 0, maka tunjukan "tahun" merupakan tahun kabisat.
+
+kriteria 2 - bagi "tahun" dengan angka 4
+             jika sisa pembagian "tahun" sama dengan 0, lalu bagi "tahun" dengan angka 100,
+             jika sisa pembagian "tahun" sama dengan 0, lalu bagi "tahun" dengan angka 400,
+             jika sisa pembagian "tahun" sama dengan 0, maka tunjukan "tahun" merupakan tahun kabisat.
+
+Pseudocode perhitungan
+STORE "tahun"
+IF "tahun" mod 4 equals to 0
+  then
+  IF "tahun" mod 100 equals to 0
+    then
+    IF "tahun" mod 400 equals to 0
+      then
+      DISPLAY tahun kabisat  
+    ELSE
+      DISPLAY not tahun kabisat
+  ELSE
+    DISPLAY tahun kabisat
+ELSE
+  DISPLAY not tahun kabisat
+
+3. Laundry Day
+Algorithm perulangan
+Pastikan bahwa tidak ada pakaian didalam mesin cuci.
+Masukan pakaian satu per satu kedalam mesin cuci sambil menghitung.
+jika hitungan sudah sampai 20, hentikan pemasukan pakaian dan hitungan.
+lalu nyalakan mesin cuci.
+
+Pseudocode perulangan
+STORE "pakaian" with 0
+
+WHILE "pakaian" < 20
+  ADD "pakaian" by1
+
+DISPLAY "I'm ready!"
+DO "nyalakan mesin cuci"
+
+4. Periksa Kuku
+Algorithm
+Steps
+    1. Posisi mulai periksa kuku dari pojok kolom dan baris
+    2. Pergi ke siswa atau siswi terdekat yang belum diperiksa kuku nya dan lakukan hitungan siswa keberapa,
+    3. Periksa kuku siswa atau siswi, per satu pasang tangan,
+            3.1. Jika kuku panjang,
+                   3.1.1. Lakukan hukuman.
+            3.2. Selain itu, berikan pujian.
+      4. Ulangi step 2 sampai 3, hingga memeriksa 40 siswa atau siswi.
+
+Pseudocode
+STORE “siswa atau siswi” by 0
+
+WHILE “siswa atau siswi” < 40
+  DO “periksa kuku” satu pasang tangan
+    IF "periksa kuku" equals to long
+      DO "hukuman"
+    ELSE
+      DO "pujian"
+  ADD “siswa atau siswi” by 1
+
+DISPLAY “40 students have been examined”
